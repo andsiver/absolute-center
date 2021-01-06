@@ -12,13 +12,13 @@ body {
   transition: all 1.5s;
 }
 .slider-item--before {
-  background: url(../Remont-before.jpg) center no-repeat;
+  background: url(./Remont-before.jpg) center no-repeat;
   clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
   left: 0;
   width: 62%;
 }
 .slider-item--after {
-  background: url(../Remont-after.jpg) center no-repeat;
+  background: url(./Remont-after.jpg) center no-repeat;
   clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
   right: 0;
   width: 62%;
@@ -26,6 +26,9 @@ body {
 .slider {
   width: 60%;
   margin: 0 auto;
+
+  position: relative;
+  min-height: 380px;
 }
 .slider-item:hover {
   width: 100%;
@@ -41,4 +44,8 @@ body {
   text-align: center;
   z-index: 999;
   padding: 16px 40px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
